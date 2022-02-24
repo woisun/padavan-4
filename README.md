@@ -54,7 +54,7 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
     ```
   - Clone source code
     ```sh
-    git clone https://github.com/meisreallyba/padavan-4.4.git
+    git clone https://github.com/xiaiohuan/padavan-4.4.git
     ```
   - Prepare toolchain
     ```sh
