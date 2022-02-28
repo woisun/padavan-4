@@ -32,46 +32,39 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
   - R2100
   - XY-C1
 
-- Compilation step
-  - Install dependencies
-    ```sh
-    # Debian/Ubuntu
-    sudo apt install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd \
-        fakeroot kmod cpio git python3-docutils gettext automake autopoint \
-        texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev \
-        libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin
+-编译步骤
 
-    ```
-  - Clone source code
-    ```sh
-    git clone https://github.com/xiaiohuan/padavan-4.4.git
-    ```
-  - Prepare toolchain
-    ```sh
-    cd padavan-4.4/toolchain-mipsel
+安装依赖项
+# Debian/Ubuntu
+sudo apt install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd \
+    fakeroot kmod cpio git python3-docutils gettext automake autopoint \
+    texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev \
+    libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin
 
-    # (Recommend) Download prebuilt toolchain for x86_64 or aarch64 host
-    ./dl_toolchain.sh
+克隆源代码
+git clone https://github.com/xiaiohuan/padavan-4.4.git
+准备工具链
+cd padavan-4.4/toolchain-mipsel
 
-    # or build toolchain with crosstool-ng
-    # ./build_toolchain
-    ```
-  - Modify template file and start compiling
-    ```sh
-    cd padavan-4.4/trunk
+#（推荐）为 x86_64 或 aarch64 主机下载预构建的工具链
+./dl_toolchain.sh
 
-    # (Optional) Modify template file
-    # nano configs/templates/K2P.config
+#或者使用 crosstool-ng 构建工具链
+# ./build_toolchain
+修改模板文件并开始编译
+cd padavan-4.4/trunk
 
-    # Start compiling
-    fakeroot ./build_firmware_modify K2P
+#（可选）修改模板文件
+# nano configs/templates/K2P.config
 
-    # To build firmware for other devices, clean the tree after previous build
-    ./clear_tree
-    ```
+#开始编译
+fakeroot ./build_firmware_modify K2P
 
-- Manuals
-  - Controlling GPIO and LEDs via sysfs
-  - How to use NAND RWFS partition
-  - How to use IPv6 NAT and fullcone NAT
-  - How to add new device support with device tree
+#要为其他设备构建固件，请在先前构建之后清理树
+./clear_tree
+手册
+
+通过 sysfs 控制 GPIO 和 LED
+如何使用 NAND RWFS 分区
+如何使用 IPv6 NAT 和全锥 NAT
+如何使用设备树添加新设备支持
