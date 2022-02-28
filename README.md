@@ -33,9 +33,7 @@
   - XY-C1
 
 - 编译步骤
-
-- Compilation step
-  - Install dependencies
+  - 安装依赖项
     ```sh
     # Debian/Ubuntu
     sudo apt install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd \
