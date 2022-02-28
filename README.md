@@ -41,42 +41,32 @@
         texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev \
         libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin
 
-    # Archlinux/Manjaro
-    sudo pacman -Syu --needed git base-devel cmake gperf ncurses libmpc \
-            gmp python-docutils vim rpcsvc-proto fakeroot cpio help2man
-
-    # Alpine
-    sudo apk add make gcc g++ cpio curl wget nano xxd kmod \
-        pkgconfig rpcgen fakeroot ncurses bash patch \
-        bsd-compat-headers python2 python3 zlib-dev \
-        automake gettext gettext-dev autoconf bison \
-        flex coreutils cmake git libtool gawk sudo
     ```
-  - Clone source code
+  - 克隆源代码
     ```sh
-    git clone https://github.com/meisreallyba/padavan-4.4.git
+   git clone https://github.com/xiaiohuan/padavan-4.4.git
     ```
-  - Prepare toolchain
+  - 准备工具链
     ```sh
     cd padavan-4.4/toolchain-mipsel
 
-    # (Recommend) Download prebuilt toolchain for x86_64 or aarch64 host
+    # （推荐）为 x86_64 或 aarch64 主机下载预构建的工具链
     ./dl_toolchain.sh
 
-    # or build toolchain with crosstool-ng
+    # 或者使用 crosstool-ng 构建工具链
     # ./build_toolchain
     ```
-  - Modify template file and start compiling
+  - 修改模板文件并开始编译
     ```sh
     cd padavan-4.4/trunk
 
-    # (Optional) Modify template file
+    # （可选）修改模板文件
     # nano configs/templates/K2P.config
 
-    # Start compiling
+    # 开始编译
     fakeroot ./build_firmware_modify K2P
 
-    # To build firmware for other devices, clean the tree after previous build
+    # 要为其他设备构建固件，请在先前构建之后清理树
     ./clear_tree
     ```
 
