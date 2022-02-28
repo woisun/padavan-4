@@ -41,16 +41,6 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
         texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev \
         libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin
 
-    # Archlinux/Manjaro
-    sudo pacman -Syu --needed git base-devel cmake gperf ncurses libmpc \
-            gmp python-docutils vim rpcsvc-proto fakeroot cpio help2man
-
-    # Alpine
-    sudo apk add make gcc g++ cpio curl wget nano xxd kmod \
-        pkgconfig rpcgen fakeroot ncurses bash patch \
-        bsd-compat-headers python2 python3 zlib-dev \
-        automake gettext gettext-dev autoconf bison \
-        flex coreutils cmake git libtool gawk sudo
     ```
   - Clone source code
     ```sh
