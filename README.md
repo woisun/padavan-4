@@ -2,13 +2,13 @@
 
 本项目基于原始 rt-n56u，最新 mtk 4.4.198 内核，取自 D-LINK GPL 代码。
 
-- Features
-  - Based on 4.4.198 Linux kernel
-  - Support MT7621 based devices
-  - Support MT7615D/MT7615N/MT7915D wireless chips
-  - Support raeth and mt7621 hwnat with legency driver
-  - Support qca shortcut-fe
-  - Support IPv6 NAT based on netfilter
+- 特征
+  - 基于 4.4.198 Linux 内核
+  - 支持基于 MT7621 的设备
+  - 支持MT7615D/MT7615N/MT7915D无线芯片
+  - 使用legency驱动支持raeth和mt7621 hwnat
+  - 支持qca快捷方式-fe
+  - 支持基于netfilter的IPv6 NAT
   - Support WireGuard integrated in kernel
   - Support fullcone NAT (by Chion82)
   - Support LED&GPIO control via sysfs
