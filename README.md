@@ -61,9 +61,3 @@ fakeroot ./build_firmware_modify K2P
 
 #要为其他设备构建固件，请在先前构建之后清理树
 ./clear_tree
-手册
-
-通过 sysfs 控制 GPIO 和 LED
-如何使用 NAND RWFS 分区
-如何使用 IPv6 NAT 和全锥 NAT
-如何使用设备树添加新设备支持
