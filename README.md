@@ -1,6 +1,6 @@
 # padavan-4.4 #
 
-This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which is fetch from D-LINK GPL code.
+本项目基于原始 rt-n56u，最新 mtk 4.4.198 内核，取自 D-LINK GPL 代码。
 
 - Features
   - Based on 4.4.198 Linux kernel
