@@ -46,7 +46,6 @@
     ```sh
     git clone https://github.com/meisreallyba/padavan-4.4.git
     ```
-  - Prepare toolchain
   - 准备工具链
     ```sh
     cd padavan-4.4/toolchain-mipsel
