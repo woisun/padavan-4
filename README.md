@@ -1,5 +1,4 @@
 # padavan-4.4 #
-
 本项目基于原始 rt-n56u，最新 mtk 4.4.198 内核，取自 D-LINK GPL 代码。
 
 特征
@@ -31,8 +30,7 @@ MI-R3G
 MI-R3P
 R2100
 XY-C1
-
--编译步骤
+编译步骤
 
 安装依赖项
 # Debian/Ubuntu
@@ -40,6 +38,7 @@ sudo apt install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd \
     fakeroot kmod cpio git python3-docutils gettext automake autopoint \
     texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev \
     libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin
+
 
 克隆源代码
 git clone https://github.com/xiaiohuan/padavan-4.4.git
