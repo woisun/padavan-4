@@ -70,8 +70,8 @@
     ./clear_tree
     ```
 
-- Manuals
-  - Controlling GPIO and LEDs via sysfs
-  - How to use NAND RWFS partition
-  - How to use IPv6 NAT and fullcone NAT
-  - How to add new device support with device tree
+- 手册
+  - 通过 sysfs 控制 GPIO 和 LED
+  - 如何使用 NAND RWFS 分区
+  - 如何使用 IPv6 NAT 和全锥 NAT
+  - 如何使用设备树添加新设备支持
