@@ -26,6 +26,7 @@
   - K2P-USB
   - NETGEAR-BZV
   - MR2600
+  - HC5962
   - MI-4
   - MI-R3G
   - MI-R3P
