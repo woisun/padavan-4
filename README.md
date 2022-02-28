@@ -33,7 +33,7 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
   - R2100
   - XY-C1
 
-编译步骤
+- 编译步骤
 
 安装依赖项
 # Debian/Ubuntu
