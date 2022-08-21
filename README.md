@@ -65,7 +65,7 @@
     # nano configs/templates/K2P.config
 
     # 开始编译
-    fakeroot ./build_firmware_modify K2P
+    fakeroot ./build_firmware_modify MI-R3G
 
     # 要为其他设备构建固件，请在先前构建之后清理树
     ./clear_tree
